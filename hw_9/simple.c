@@ -12,13 +12,13 @@ int main()
 
   //create variable size of name and then stores it in memory
   //
-  char* c1 = (char*)malloc(sizeof(name1)+1);
+  char* c1 = (char*)malloc(sizeof(name1));
   strcpy(c1, name1);
 
-  char* c2 = (char*)malloc(sizeof(name2)+1);
+  char* c2 = (char*)malloc(sizeof(name2));
   strcpy(c2, name2);
 
-  char* c3 = (char*)malloc(sizeof(name3)+1);
+  char* c3 = (char*)malloc(sizeof(name3));
   strcpy(c3, name3);
 
   //grabs the name from memory and stores it in array[]
@@ -33,9 +33,10 @@ int main()
 
   //frees up memory
   //
-  free(&c1);
-  free(&c2);
-  free(&c3);
+  free(c1);
+  free(c2);
+  free(c3);
+  free(array);
 
   //exits gracefully
   //
