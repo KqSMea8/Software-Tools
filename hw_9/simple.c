@@ -33,9 +33,9 @@ int main()
 
   //frees up memory
   //
-  free(&name1);
-  free(&name2);
-  free(&name3);
+  free(&c1);
+  free(&c2);
+  free(&c3);
 
   //exits gracefully
   //
