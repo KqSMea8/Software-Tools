@@ -1,0 +1,11 @@
+cp ./20190128-02.txt newdir/f00000001.txt 
+cp ./filenames.txt newdir/f00000002.txt 
+cp ./20190128-06.txt newdir/f00000003.txt 
+cp ./20190128-04.txt newdir/f00000004.txt 
+cp ./20190128-08.txt newdir/f00000005.txt 
+cp ./20190128-09.txt newdir/f00000006.txt 
+cp ./20190128-01.txt newdir/f00000007.txt 
+cp ./20190128-03.txt newdir/f00000008.txt 
+cp ./20190128.txt newdir/f00000009.txt 
+cp ./20190128-07.txt newdir/f00000010.txt 
+cp ./20190128-05.txt newdir/f00000011.txt 

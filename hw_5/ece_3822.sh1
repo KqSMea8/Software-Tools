@@ -1,0 +1,25 @@
+#!/bin/sh
+
+#ensure infinite loop
+while true; do
+    
+#   changes fastest, seconds check first
+    second=`date +%S`
+#   stores minutes
+    minute=`date +%M`
+#   grabs current date and time
+    now=`date`
+
+##  if minute and second are 0, must be new hour
+    if [ $minute == "00" ]  && [ $second == "00" ]
+    then
+#       echo current date to display
+        echo $now
+#       sleep to ensure only one echo and write happens
+        sleep 5
+    fi
+
+done
+
+
+#end of file
