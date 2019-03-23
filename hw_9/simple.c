@@ -36,7 +36,7 @@ int main()
   free(c1);
   free(c2);
   free(c3);
-  free(array);
+
 
   //exits gracefully
   //
