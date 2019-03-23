@@ -31,9 +31,9 @@ int main()
   fprintf(stdout, "array 1: %s\n", *array[1]);
   fprintf(stdout, "array 2: %s\n", *array[2]);
 
-  fprintf(stdout, "array 0 address: %s\n", *array[0]);
-  fprintf(stdout, "array 1 address: %s\n", *array[1]);
-  fprintf(stdout, "array 2 address: %s\n", *array[2]);
+  fprintf(stdout, "array 0 address: %p\n", *array[0]);
+  fprintf(stdout, "array 1 address: %p\n", *array[1]);
+  fprintf(stdout, "array 2 address: %p\n", *array[2]);
 
   //frees up memory
   //
@@ -45,9 +45,9 @@ int main()
   fprintf(stdout, "array 1: %s\n", *array[1]);
   fprintf(stdout, "array 2: %s\n", *array[2]);
 
-  fprintf(stdout, "array 0 address: %s\n", *array[0]);
-  fprintf(stdout, "array 1 address: %s\n", *array[1]);
-  fprintf(stdout, "array 2 address: %s\n", *array[2]);
+  fprintf(stdout, "array 0 address: %p\n", *array[0]);
+  fprintf(stdout, "array 1 address: %p\n", *array[1]);
+  fprintf(stdout, "array 2 address: %p\n", *array[2]);
 
   //exits gracefully
   //
