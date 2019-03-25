@@ -5,30 +5,27 @@
 
 # define a target for the application
 #
-all: mytest.exe
+all: example.exe
 
 # define a target to link the application
 #
-mytest.exe: mytest_00.o mytest.o
-	g++ -lm mytest_00.cc mytest.cc -o mytest.exe 
+example.exe: example_00.o example.o
+	g++ -lm example_00.cc example.cc -o example.exe
 
 # define targets to compile the source code
 #
 
 
+example_00.o: example_00.cc Example.h Makefile
+	g++ -O2 -c example_00.cc -o example_00.o
 
-mytest_00.o: mytest_00.cc mytest.h Makefile
-	g++ -O2 -c mytest_00.cc -o mytest_00.o 
-
-mytest.o: mytest.cc mytest.h Makefile
-	g++ -O2 -c mytest.cc -o mytest.o
+example.o: example.cc Example.h Makefile
+	g++ -O2 -c example.cc -o example.o
 
 # define a target to clean the directory
 #
 clean:
-	rm -f mytest_00.o mytest.o mytest.exe
+	rm -f example_00.o example.o example.exe
 
 #
 # end of file
-
-
