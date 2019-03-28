@@ -11,8 +11,8 @@
 //
 double& MySparseMatrix::operator()(int row, int col)
 {
-    assert(col >= 0 && col < 4);
-    assert(row >= 0 && row < 4);
+    assert(col >= 0 && col < 10);
+    assert(row >= 0 && row < 10);
 
     return data[row][col];
 }
