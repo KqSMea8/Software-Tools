@@ -15,7 +15,7 @@ private:
 public:
     //setup array
     //
-    double data[10000][10000];
+  double data[1000000][1000000];
 
     //constructor
     //
@@ -23,8 +23,8 @@ public:
     {
         // Set all elements of the matrix to 0.0
         //
-        for (int row=0; row < 4; ++row)
-            for (int col=0; col < 4; ++col)
+        for (int row=0; row < 1000000; ++row)
+            for (int col=0; col < 1000000; ++col)
                 data[row][col] = 0.0;
     }
 
