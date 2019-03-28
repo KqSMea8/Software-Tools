@@ -11,8 +11,12 @@ class MySparseMatrix
 private:
     //create array 1M by 1M
     //
-    double data[1000000][1000000];
+
 public:
+    //setup array
+    //
+    double data[10000][10000];
+
     //constructor
     //
     MySparseMatrix()
@@ -58,6 +62,7 @@ public:
   void Append(char* data);
   void Delete(char* data);
 };
+/*
 Node::Node( int i, int j, int val )
     : iValue(i)
     , jValue(j)
@@ -65,7 +70,7 @@ Node::Node( int i, int j, int val )
     , rowPtr(NULL)
     , colPtr(NULL)
 {}
-
+*/
 
 
 #endif

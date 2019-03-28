@@ -3,8 +3,7 @@
 #include "Example.h"
 #include <iostream>
 
-int main()
-
+int main(void)
 {
   //rename MySparseMatrix
   //
