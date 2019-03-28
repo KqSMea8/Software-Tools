@@ -17,10 +17,10 @@ example.exe: example_00.o example.o
 
 
 example_00.o: example_00.cc Example.h Makefile
-	g++ -O2 -g -c example_00.cc -o example_00.o
+	g++ -g -O2 -c example_00.cc -o example_00.o
 
 example.o: example.cc Example.h Makefile
-	g++ -O2 -g -c example.cc -o example.o
+	g++ -g -O2 -c example.cc -o example.o
 
 # define a target to clean the directory
 #

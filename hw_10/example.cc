@@ -11,19 +11,19 @@ int main(void)
 
   //write data to array
   //
-  matrix (1, 1) = 27;
-  matrix (2, 2) = 27;
-  matrix (999, 999) = 27;
+  //  matrix (1, 1) = 27;
+  //matrix (2, 2) = 27;
+  //matrix (9, 9) = 27;
 
   //read data out
   //
   std::cout << matrix(1, 1);
   std::cout << matrix(2, 2);
-  std::cout << matrix(999, 999);
+  std::cout << matrix(9, 9);
 
   //erase matrix
   //
-  matrix(); // erase matrix
+  //  matrix(); // erase matrix
 
 
   //exit gracefully
