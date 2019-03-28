@@ -15,7 +15,7 @@ private:
 public:
     //setup array
     //
-  double data[10][10];
+  double data[9][9];
 
     //constructor
     //
