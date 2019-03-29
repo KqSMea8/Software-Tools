@@ -21,8 +21,8 @@ double& MySparseMatrix::operator()(int row, int col)
 //
 const double& MySparseMatrix::operator()(int row, int col) const
 {
-  assert(col >= 0 && col < 4);
-  assert(row >= 0 && row < 4);
+  assert(col >= 0 && col < 10);
+  assert(row >= 0 && row < 10);
 
   return data[row][col];
 }
@@ -32,8 +32,8 @@ const double& MySparseMatrix::operator()(int row, int col) const
 void MySparseMatrix::operator()()
 {
     // reset all elements of the matrix to 0.0
-  for (int row=0; row < 4; ++row)
-    for (int col=0; col < 4; ++col)
+  for (int row=0; row < 10; ++row)
+    for (int col=0; col < 10; ++col)
       data[row][col] = 0.0;
 }
 
