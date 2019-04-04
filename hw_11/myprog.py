@@ -5,9 +5,11 @@ import nltk
 from nltk import ngrams
 from nltk import word_tokenize
 from collections import Counter
+import re
 
 if __name__ == "__main__":
-    grams=[]
+    filtered_ngrams = []
+    wordfreq = []
     ##initialize argparser to take in arguements and setup help
     ##
     parser = argparse.ArgumentParser()
@@ -17,15 +19,21 @@ if __name__ == "__main__":
     variables = parser.parse_args()
 
     for f in variables.file:
-        content = f.read().split()
+        content = f.read().lower().replace('\n', ' ').replace('[^a-zA-Z0-9\s]', '')
+        tokens = [token for token in content.split(" ") if token != ""]
+
+        all_ngrams = ngrams(tokens,variables.ngram_l)
+        ##list comprehension
+        ##
+        filtered_ngrams.append([x for x in all_ngrams if variables.word in x])
+
+    for pair in filtered_ngrams:
+        wordfreq.append(filtered_ngrams.count(pair))
 
 
-        grams.append(ngrams(content,variables.ngram_l))
-        print(grams)
-#        for line in f:
 
-#            grams = ngrams(line.split(), variables.ngram_l)
-
-    for grammy in grams:
+    for grammy in filtered_ngrams:
         print grammy
 
+
+    print("Frequencies\n" + str(wordfreq) + "\n")
