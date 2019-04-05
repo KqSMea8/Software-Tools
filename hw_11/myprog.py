@@ -27,13 +27,13 @@ if __name__ == "__main__":
         ##
         filtered_ngrams.append([x for x in all_ngrams if variables.word in x])
 
-    for pair in filtered_ngrams:
-        wordfreq.append(filtered_ngrams.count(pair))
-
+#    for pair in filtered_ngrams:
+#        wordfreq.append(filtered_ngrams.count(pair))
 
 
     for grammy in filtered_ngrams:
-        print grammy
-
+        for i in grammy:
+            wordfreq.append(filtered_ngrams.count(i))
+            print i
 
     print("Frequencies\n" + str(wordfreq) + "\n")
