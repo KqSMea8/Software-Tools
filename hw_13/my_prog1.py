@@ -80,10 +80,10 @@ for row in xrange(0,101):
 for row in xrange(0,100,001):
     name = str(random.choice(first_name)) + " " + str(random.choice(string.ascii_uppercase)) + ". " + str(random.choice(last_name))
 #    print name                                                                                                                              
-    worksheet2.write(row, col, random.randint(0, int(bignum)))
-    worksheet2.write(row, col + 1, str(random.choice(website)))
-    worksheet2.write(row, col + 2, name)
-    worksheet2.write(row, col + 3, str(random.choice(location)))
+    worksheet3.write(row, col, random.randint(0, int(bignum)))
+    worksheet3.write(row, col + 1, str(random.choice(website)))
+    worksheet3.write(row, col + 2, name)
+    worksheet3.write(row, col + 3, str(random.choice(location)))
 
 workbook.close()
 
