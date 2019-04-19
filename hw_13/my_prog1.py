@@ -4,7 +4,8 @@ import json
 import random
 import string
 import re
-
+##THIS TAKES A REALLY LONG TIME TO RUN
+##
 ##was getting a weird encoding error, had to add sys below
 ##
 import sys
@@ -77,7 +78,7 @@ for row in xrange(0,101):
     worksheet2.write(row, col + 2, name)
     worksheet2.write(row, col + 3, str(random.choice(location)))
 
-for row in xrange(0,100,001):
+for row in xrange(0,100001):
     name = str(random.choice(first_name)) + " " + str(random.choice(string.ascii_uppercase)) + ". " + str(random.choice(last_name))
 #    print name                                                                                                                              
     worksheet3.write(row, col, random.randint(0, int(bignum)))
@@ -87,15 +88,3 @@ for row in xrange(0,100,001):
 
 workbook.close()
 
-## ways to read
-##
-wb = xlrd.open_workbook(work_name) 
-sheet = wb.sheet_by_index(0) 
-  
-## For row 0 and column 0 
-##
-sheet.cell_value(0, 0) 
-  
-for i in range(sheet.nrows): 
-#    print(sheet.cell_value(0, i)) 
-    print(sheet.row_values(i)) 
